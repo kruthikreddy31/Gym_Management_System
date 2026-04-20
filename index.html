@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AQI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>AQI Dashboard</h1>
+
+<label>Select City:</label>
+<select id="citySelect" onchange="loadCityData()">
+    <option value="Delhi">Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Hyderabad">Hyderabad</option>
+</select>
+
+<h2 id="result"></h2>
+
+<h3>Statistics</h3>
+<p id="stats"></p>
+
+<h3>AQI Trend</h3>
+<canvas id="lineChart"></canvas>
+
+<h3>Pollutants</h3>
+<canvas id="barChart"></canvas>
+
+<h3>AQI Distribution</h3>
+<canvas id="pieChart"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
